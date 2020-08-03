@@ -1,0 +1,87 @@
+﻿Exemplos 1
+
+
+FUNÇÕES MATEMÁTICAS   =================================
+from math import *
+
+print ("seno=",sin(3.2))
+print ("pi:",pi)
+
+Se importar deste modo:
+import math
+
+nesse caso tem que usar math na frente dos métodos:
+print ("seno=",math.sin(3.2))
+print ("pi:",math.pi)
+
+
+
+FUNÇÕES PARA SORTEIO   ================================
+import random
+
+print ("rand=",random.random())      #sorteia valor float entre 0.0 e 0.9999999
+print ("rand=",random.randint(2,5))  #sorteia valor int entre 2 e 5
+
+
+
+FUNÇÕES DE DATA    ====================================
+import datetime
+
+hoje = datetime.date.today()
+
+print("hoje=",hoje)
+print("hoje=",hoje.month)
+print("hoje=",hoje.year)
+print("hoje=",hoje.day)
+print("weekday=",hoje.weekday())  #retorna 0 para segunda, 1 para terça, 2 para quarta, etc...
+
+import time
+
+print("hora:",time.localtime().tm_hour)
+print("min:",time.localtime().tm_min)
+print("seg:",time.localtime().tm_sec)
+
+
+
+
+FUNÇÔES DE STRING   ===================================
+
+s = "internacional"
+car = 'a'
+car += 'b'                                 # concatena 'b' a string car
+
+print("comprimento da string s = ", len(s))
+
+print("str=%20s"%s)               # insere espaços a esquerda ate completar 20 posicoes
+print("str=%-20s"%s,".")          # insere espaços a direita ate completar 20 posicoes
+
+print("str=%-20s"%s.upper(),".")  # insere espaços a direita ate completar 20 posicoes
+			     # s.upper() retorna string em MAIÚSCULAS
+
+print("str=%-20s"%s[4],".")      # s[4] mostra o quarto caracter da string
+print (s[2:5])                             # mostra a substring, do índice 2 ao 5 (exclusivo)
+
+if nome.lower() == "teste":     # nome.lower() retorna string em minúsculas
+   print("nome é teste.")
+
+ss = s + "ee"                  # concatena "ee" numa copia da string s e atribui o resultado a string ss
+ss+="x"                        # concatena "x" a string ss
+
+a = "oi.sd"
+x = a.replace(".",",")        # troca (substitui)  caracteres . por ,
+print("x=",x)                # imprime oi,sd
+
+valor = 7.3456
+texto = "valor="  + str(valor)       # a função str converte o parâmetro para string
+print(texto)
+
+FORMATAÇÂO DOS DADOS NO PRINT  ===================================
+
+a=6			#é um int
+c=7.36789321		#é um float
+
+print("c=%.2f"%c," .. %.5f"%c,".. %.1f __ %.2f"%(c,c))
+print("a= %3d ..."%a)
+
+# tabulando (inserindo TABS com \t) e novalinha com \n
+print("\tabcdefgh\n\n")
