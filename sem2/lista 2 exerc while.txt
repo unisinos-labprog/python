@@ -1,0 +1,17 @@
+segunda lista de exercícios de repetição
+
+1) Crie um programa que lê o nome, a idade e a altura de X atletas, onde X deve ser solicitado pelo teclado. Ao final, informe:
+
+    o nome do atleta mais velho
+    a média de altura dos atletas
+    o nome do atleta mais baixo
+
+
+2) Crie um programa que leia inteiros positivos pelo teclado e ao final informe quantos números foram digitados no intervalo de [0 a 100], quantos foram digitados no intervalo de [101 a 200], quantos foram digitados no intervalo de [201 a 400] e quantos foram digitados no intervalo de [401 a ∞). O programa deve parar de solicitar números quando um valor negativo for digitado.
+
+
+3) Crie um programa que imprime um retângulo de asteriscos com N linhas por M colunas (N e M devem ser solicitados pelo teclado). Por exemplo, se N = 3 e M = 4, o desenho impresso deve ser:
+
+* * * *
+* * * *
+* * * *
